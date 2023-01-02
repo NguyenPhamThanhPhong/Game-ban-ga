@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Media;
 using System.Text;
@@ -10,7 +11,9 @@ namespace BaiTH5_21520455_PhanTuanThanh
 {
     internal class Bullet
     {
-        private Bitmap bmp = new Bitmap("Bullet.png");
+        private static string path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + "\\Image Sources" + "\\egg.png";
+
+        private Bitmap bmp = new Bitmap(path);
         private int x, y;
 
 

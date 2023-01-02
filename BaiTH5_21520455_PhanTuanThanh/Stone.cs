@@ -5,12 +5,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
+using BaiTH5_21520455_PhanTuanThanh.Properties;
+using System.Resources;
+using System.IO;
 
 namespace BaiTH5_21520455_PhanTuanThanh
 {
     internal class Stone
     {
-        private Bitmap bmp = new Bitmap("Meteorite.png");
+        //Bitmap bb = new Bitmap("Meterio")
+        private static string path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + "\\Image Sources" + "\\ff.png";
+        private Bitmap bmp = new Bitmap(path);
+            //new Bitmap(Resources.ResourceManager.GetObject("Meteorite.png"));
         private int x, y;
 
         public Stone(int x, int y)

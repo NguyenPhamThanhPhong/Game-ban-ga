@@ -95,11 +95,11 @@
             // 
             // FormGame
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(784, 961);
+            this.ClientSize = new System.Drawing.Size(782, 953);
             this.Controls.Add(this.picJetAir);
             this.Controls.Add(this.labelScore);
             this.DoubleBuffered = true;
@@ -111,6 +111,7 @@
             this.Name = "FormGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Flight Fighter";
+            this.Load += new System.EventHandler(this.FormGame_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.FormGame_Paint);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyisdown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyisup);

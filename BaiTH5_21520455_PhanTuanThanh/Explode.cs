@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Media;
 using System.Text;
@@ -10,7 +11,9 @@ namespace BaiTH5_21520455_PhanTuanThanh
 {
     internal class Explode
     {
-        private Bitmap bmp = new Bitmap("Explode.png");
+        private static string path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + "\\Image Sources" + "\\Explode.jpg";
+
+        private Bitmap bmp = new Bitmap(path);
         private int x, y;
 
         public Explode(int x, int y)

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,7 +17,8 @@ namespace BaiTH5_21520455_PhanTuanThanh
         {
             InitializeComponent();
         }
-
+        
+        
         List<Stone> stones = new List<Stone>();
         List<Bullet> bullets = new List<Bullet>();
         List<Explode> bombs = new List<Explode>();
@@ -137,6 +139,13 @@ namespace BaiTH5_21520455_PhanTuanThanh
         int imgWidth = 80, imgHeight = 80;
         int posX = 0, posY = 0;
         private bool moveUp = false, moveDown = false, moveLeft = false, moveRight = false;
+
+        private void FormGame_Load(object sender, EventArgs e)
+        {
+            //string ppp = ;
+
+            //MessageBox.Show(ppp);
+        }
 
         private void timerShooting_Tick(object sender, EventArgs e)
         {
